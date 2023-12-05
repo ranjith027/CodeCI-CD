@@ -14,7 +14,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: "/home/runner/work/candel/candel/JavaScript/"
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
