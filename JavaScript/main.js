@@ -3,7 +3,7 @@ const app = express();
 const fs = require('fs');
 const winston = require('winston');
 
-// Load data from file    
+// Load data from file     
 const data = JSON.parse(fs.readFileSync('data.json'));
 
 // Configure the logger to write to STDOUT
