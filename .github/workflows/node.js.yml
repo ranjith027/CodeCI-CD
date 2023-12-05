@@ -12,7 +12,7 @@ on:
 
 defaults:
   run:
-    working-directory: "/home/runner/work/candel/candel/JavaScript/"
+    working-directory: "/home/runner/work/CodeCI-CD/CodeCI-CD/JavaScript/"
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: "/home/runner/work/candel/candel/JavaScript/"
+        cache-dependency-path: "/home/runner/work/CodeCI-CD/CodeCI-CD/JavaScript/"
     - run: pwd
     - run: npm ci
     - run: npm run build --if-present

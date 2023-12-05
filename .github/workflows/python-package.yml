@@ -12,7 +12,7 @@ on:
 
 defaults:
   run:
-    working-directory: "/home/runner/work/candel/candel/Python/"
+    working-directory: "/home/runner/work/CodeCI-CD/CodeCI-CD/Python/"
 
 jobs:
   build:
